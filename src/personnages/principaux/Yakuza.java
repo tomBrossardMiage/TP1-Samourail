@@ -17,6 +17,27 @@ public class Yakuza extends Humain{
 		this.parler("Je t'ai eu gros caca");
 	}
 	
+	public void gagnerDuel() {
+		this.reputation+=1;
+		this.parler("Victoire mouhahahaha");
+	}
+	
+	public void perdreDuel() {
+		this.reputation-=1;
+		this.perdreArgent(this.getArgent());
+		this.parler("J'ai perdu zbi :(");
+	}
+	
+	public int getReputation() {
+		return this.reputation;
+	}
+	
+	
+	@Override
+	public void direBonjour() {
+		super.direBonjour();
+		this.parler("Mon clan est le clan : " + this.clan);
+	}
 	
 
 }
