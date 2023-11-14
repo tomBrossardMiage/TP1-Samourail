@@ -2,7 +2,6 @@ package personnages.secondaires;
 
 import java.util.*;
 import personnages.Humain;
-import personnages.principaux.*;
 
 public class GrandMere extends Humain{
 	private Humain [] memoire;

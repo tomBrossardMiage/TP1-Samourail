@@ -1,6 +1,5 @@
 package personnages.principaux;
 
-import personnages.Humain;
 
 public class Samourai extends Ronin{
 	private String seigneur;
